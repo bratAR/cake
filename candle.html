@@ -39,7 +39,7 @@
 <script>
   const btn = document.getElementById('runBtn');
 
-  // Move button randomly when hovered
+  
   btn.addEventListener('mouseover', () => {
     const x = Math.random() * (window.innerWidth - btn.clientWidth);
     const y = Math.random() * (window.innerHeight - btn.clientHeight);
@@ -47,12 +47,12 @@
     btn.style.top = `${y}px`;
   });
 
-  // Redirect to cake page when clicked
+ 
   btn.addEventListener('click', () => {
     alert("Wow! You actually caught me! 🎉 Redirecting to your cake...");
     setTimeout(() => {
       window.location.href = "cake.html";
-    }, 1000); // delay 1 second for fun
+    }, 1000); 
   });
 </script>
 </body>
